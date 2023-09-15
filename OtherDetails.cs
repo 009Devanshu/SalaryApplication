@@ -148,13 +148,14 @@ namespace EmployeesApplication
                     iText.Layout.Document document = new iText.Layout.Document(pdf);
                     //*********************************************************
 
-                    //string imagepath = "EmployeesApplication.log6.png";
-                    string imagepath = Application.StartupPath + "\\Resources" + "\\log6.png";
-                    //System.Drawing.Image image = Properties.Resources.logo2;
+                    string imagepath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "log6.png");
 
-                    //string imagepath2 = "EmployeesApplication.logo2.png";
-                    string imagepath2 = Application.StartupPath + "\\Resources" + "\\logo2.png";
-                    //System.Drawing.Image image2 = Properties.Resources.log6;
+
+                    //string imagepath = Application.StartupPath + "\\Resources" + "\\log6.png";
+
+                    string imagepath2 = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "logo2.png");
+                    //string imagepath2 = Application.StartupPath + "\\Resources" + "\\logo2.png";
+
 
 
 
